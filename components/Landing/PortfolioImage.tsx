@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portfolio from "@/public/portfolio.jpg";
+import portfolio from "@/assets/portfolio.jpg";
 
 const PortfolioImage = () => {
   return (

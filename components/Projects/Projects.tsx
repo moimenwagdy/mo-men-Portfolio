@@ -1,7 +1,7 @@
 import SectionHeader from "../SectionHeader/sectionHeader";
 import Project from "./ProjectItem/Project";
-import violetLanding from "@/public/violetLanding.png";
-import mySpotify from "@/public/mySpotify.png";
+import violetLanding from "@/assets/violetLanding.png";
+import mySpotify from "@/assets/mySpotify.png";
 const Projects = () => {
   return (
     <section id="projects" className="space-y-6 lg:w-[90%] mx-auto pt-10">

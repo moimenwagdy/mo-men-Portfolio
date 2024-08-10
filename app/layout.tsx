@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "mo'men portfolio",
   description: "portfolio for mo'men as a web developer",
   keywords: [
+    "mo'men wagdy",
     "next developer",
     "react developer",
     "frontend developer",

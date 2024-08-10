@@ -23,7 +23,7 @@ const Project: React.FC<{
   gitUrl,
 }) => {
   return (  
-    <main className=" flex bg-white/40 dark:bg-darkestBlack/30 dark:text-white/80 rounded-md py-2 flex-col sm:flex-row sm:justify-evenly px-4 gap-y-4 items-center">
+    <main className=" flex bg-white/10 dark:bg-darkestBlack/30 dark:text-white/80 rounded-md py-2 flex-col sm:flex-row sm:justify-evenly px-4 gap-y-4 items-center">
       <ProjectItemBody
         title={title}
         description={description}

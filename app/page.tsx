@@ -2,7 +2,7 @@ import Landing from "@/components/Landing/Landing";
 import About from "@/components/About/About";
 import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact/Contact";
-// import Feedback from "@/components/Feedback/FeedbackComponent";
+import Feedback from "@/components/Feedback/FeedbackComponent";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
-      {/* <Feedback /> */}
+      <Feedback />
     </main>
   );
 }

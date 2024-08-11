@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import NavcvIcon from "./NavcvIcon";
+import Nav_cvIcon from "./Nav_cvIcon";
 import { motion } from "framer-motion";
 
 const Nav_cv = () => {
@@ -32,7 +32,7 @@ const Nav_cv = () => {
         className={`${
           playAnim ? "xr" : ""
         } cursor-pointer flex justify-center items-center gap-x-2 mb-auto`}>
-        <NavcvIcon />
+        <Nav_cvIcon />
         <p className="text-xl">C.V</p>
       </span>
       <motion.ul

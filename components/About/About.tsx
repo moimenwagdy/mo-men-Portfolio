@@ -3,9 +3,9 @@ import SkillsSection from "./SkillsSection";
 
 const Skills = () => {
   return (
-    <section id="about" className="flex flex-col gap-y-6 w-full pt-10">
+    <section id="about" className="flex flex-col gap-y-14 w-full pt-10">
       <SectionHeader adress="About" />
-      <aside className="mx-auto bg-darkBlack/40 dark:bg-darkBlack rounded-md py-4 w-full  sm:w-3/4 px-4 h-full space-y-10">
+      <aside className="mx-auto bg-darkBlack/40 dark:bg-darkestBlack rounded-md py-4 w-full  sm:w-3/4 px-4 h-full space-y-10">
         <div className="space-y-4">
           <h2 className="text-white text-lg">
             I&#39;m Frontend React, Next developer

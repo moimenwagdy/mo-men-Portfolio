@@ -10,8 +10,8 @@ export default function Home() {
       <Landing />
       <About />
       <Projects />
-      <Contact />
       <Feedback />
+      <Contact />
     </main>
   );
 }

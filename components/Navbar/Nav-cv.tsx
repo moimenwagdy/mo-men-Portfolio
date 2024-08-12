@@ -33,7 +33,7 @@ const Nav_cv = () => {
           playAnim ? "xr" : ""
         } cursor-pointer flex justify-center items-center gap-x-2 mb-auto`}>
         <Nav_cvIcon />
-        <p className="text-xl">C.V</p>
+        <p className="text-xl dark:text-white" >C.V</p>
       </span>
       <motion.ul
         onViewportLeave={scrollEndsAnim}

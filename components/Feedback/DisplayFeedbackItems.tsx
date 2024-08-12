@@ -1,11 +1,10 @@
 import FeedbackItem from "./FeedbackItem";
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-
+console.log(apiUrl)
 export default async function DisplayFeedbackItems() {
   try {
     const response = await fetch(`${apiUrl}/feedback/`, {
-      // next: { revalidate: 10 },
     });
 
     if (!response.ok) {

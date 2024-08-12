@@ -10,18 +10,12 @@ const ProjectItemBody: React.FC<{
   liveUrl: string;
 }> = ({ usageGuide, technologies, description, title, gitUrl, liveUrl }) => {
   return (
-    <div className="w-full sm:w-3/4 flex flex-col space-y-1 ">
-      <ProjectHeader
-        gitUrl={gitUrl}
-        liveUrl={liveUrl}
-        title={title}
-        description={description}
-      />
+    <div className="w-full sm:w-3/4 flex flex-col space-y-1 py-6 h-full">
       <section className="self-start w-full">
-        <h2 className=" mx-auto sm:mx-0 px-4 py-1  bg-gradient-to-r from-lightGray to-transparent dark:from-darkBlack dark:to-transparent w-fit">
+        <h2 className=" mx-auto sm:mx-0 px-4 py-1 rounded-md  bg-gradient-to-r from-black/50 to-transparent dark:from-white/50 dark:to-transparent w-fit">
           Used technologies
         </h2>
-        <ul className=" pe-2 flex flex-wrap justify-center sm:justify-start gap-x-2">
+        <ul className=" text-sm md:text-base pe-2 flex flex-wrap justify-center sm:justify-start gap-x-2">
           {technologies.map((tech, index) => {
             return (
               <li key={index}>
@@ -31,11 +25,11 @@ const ProjectItemBody: React.FC<{
           })}
         </ul>
       </section>
-      <section className="self-start w-full">
-        <h3 className=" w-fit mx-auto sm:mx-0 px-4 py-1  bg-gradient-to-r from-lightGray to-transparent dark:from-darkBlack dark:to-transparent ">
+      <section className="self-start w-full sm:w-[95%]">
+        <h3 className=" w-fit mx-auto sm:mx-0 px-4 py-1 rounded-md  bg-gradient-to-r from-black/50 to-transparent dark:from-white/50  dark:to-transparent ">
           Usage guide
         </h3>
-        <p className=" text-center sm:text-start pe-2">
+        <p className=" text-sm md:text-base text-center sm:text-start pe-2">
           {usageGuide && usageGuide}
         </p>
       </section>

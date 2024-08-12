@@ -2,9 +2,10 @@
 import { useFormState } from "react-dom";
 import { sendFeedBack } from "../function/sendFeedback";
 import FormSubmitButton from "./FormSubmitButton";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const FeedbackForm = () => {
+  const [isAdded, setIsAdded] = useState<boolean>(false);
   const [state, formAction] = useFormState(sendFeedBack, null);
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -15,8 +16,10 @@ const FeedbackForm = () => {
     }
     if (state?.success) {
       formRef.current?.reset();
+      setIsAdded(true);
+      window.localStorage.setItem("reviewed", JSON.stringify(isAdded));
     }
-  });
+  }, [isAdded, state?.success]);
 
   return (
     <section className="w-full sm:w-3/4 md:w-1/2">
@@ -37,7 +40,7 @@ const FeedbackForm = () => {
           placeholder="Enter your feedback here"
           name="userFeedback"
         />
-        <FormSubmitButton />
+        <FormSubmitButton suspend={isAdded} />
       </form>
       <p className="w-fit mx-auto text-sm font-semibold text-red-800 mt-4">
         {!state?.success && state?.message}

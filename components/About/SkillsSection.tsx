@@ -39,7 +39,6 @@ const SkillsSection = () => {
         variants={{
           move: { transition: { staggerChildren: 0.1, repeat: 0 } },
         }}
-        // animate="move"
         whileInView={inViewForTheFirstTime ? "move" : ""}
         onViewportEnter={updateAnimationState}
         className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
@@ -48,7 +47,7 @@ const SkillsSection = () => {
             <motion.li
               variants={{ move: { opacity: 1 } }}
               initial={{ opacity: !inViewForTheFirstTime ? 1 : 0 }}
-              className="px-2 py-2 w-auto text-center text-darkBlack rounded-md bg-white/70 hover:bg-darkGray hover:text-white  transition-all duration-200 dark:bg-darkBlue/70 dark:text-white dark:hover:bg-darkestBlue"
+              className="px-2 py-2 w-auto text-center text-darkBlack rounded-md bg-white/70 hover:bg-darkGray hover:text-white  transition-all duration-200 dark:bg-darkBlue dark:text-white dark:hover:bg-darkestBlue"
               key={index}>
               <p>{skill} </p>
             </motion.li>

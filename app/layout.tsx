@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import StoreProvider from "@/store/StoreProvider";
 import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata: Metadata = {
@@ -47,13 +46,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <StoreProvider>
-      <html lang="en" className="scroll-smooth ">
-        <body className="bg-gradient-to-b from-lightBlue via-lightestBlue to-lightBlue dark:from-darkBlue dark:via-darkestBlue dark:to-darkBlue font-lexend ">
-          <Navbar />
-          {children}
-        </body>
-      </html>
-    </StoreProvider>
+    <html lang="en" className="scroll-smooth dark">
+      <body className="bg-gradient-to-b from-lightBlue via-lightestBlue to-lightBlue dark:from-darkBlue dark:via-darkestBlue dark:to-darkBlue font-lexend ">
+        <Navbar />
+        {children}
+      </body>
+    </html>
   );
 }

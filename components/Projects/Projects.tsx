@@ -4,9 +4,10 @@ import violetLanding from "@/public/violetLanding.png";
 import mySpotify from "@/public/mySpotify.png";
 const Projects = () => {
   return (
-    <section id="projects" className="space-y-6 lg:w-[90%] mx-auto pt-10">
-      <SectionHeader adress="Projects" />
+    <section id="projects" className=" space-y-8 lg:w-[90%] mx-auto pt-10">
+      <SectionHeader adress="Projects" newStyle="bg-lightBlue text-white" />
       <Project
+        key="1StPro"
         title="Violet Store"
         description="E-commerce website"
         imgSrc={violetLanding}
@@ -21,11 +22,12 @@ const Projects = () => {
           "TailwindCSS -",
           "Framer-motion",
         ]}
-        usageGuide="explore all products, or find your target by choosing a category or search products "
+        usageGuide="explore all products, or find your target by choosing a category or search products"
         gitUrl="https://github.com/moimenwagdy/violetShop"
         liveUrl="https://violetshop.netlify.app/"
       />
       <Project
+        key="2Ndpro"
         title="mySpotify"
         description="Music website"
         imgSrc={mySpotify}

@@ -1,5 +1,6 @@
 import React from "react";
 import Nav_cv from "./Nav-cv";
+import StyleMood from "./light-dark-Mood/StyleMood";
 
 const Navbar = () => {
   return (
@@ -9,6 +10,9 @@ const Navbar = () => {
           Portfolio
         </h1>
         <Nav_cv />
+      </section>
+      <section className="container mx-auto mt-6">
+        <StyleMood />
       </section>
     </nav>
   );

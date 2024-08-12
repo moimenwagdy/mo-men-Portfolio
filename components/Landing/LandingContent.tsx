@@ -14,7 +14,7 @@ const LandingContent = () => {
       <motion.h3
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="w-full md:w-[90%] md:mx-auto text-md md:text-lg mt-4 whitespace-normal">
+        className="text-black/80 w-full md:w-[90%] md:mx-auto text-md md:text-lg mt-4 whitespace-normal">
         On this portfolio, you&#39;ll see presentation of my work, highlighting
         projects that shows my experience in TypeScript, React, Next.js, Redux,
         Tailwind CSS, and more. Each project reflects my commitment to

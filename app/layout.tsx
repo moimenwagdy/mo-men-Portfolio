@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import { ThemeProvider } from "next-themes";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "mo'men portfolio",
@@ -48,8 +50,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth dark">
       <body className="bg-gradient-to-b from-lightBlue via-lightestBlue to-lightBlue dark:from-darkBlue dark:via-darkestBlue dark:to-darkBlue font-lexend ">
-        <Navbar />
-        {children}
+        <ThemeProvider attribute="class">
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

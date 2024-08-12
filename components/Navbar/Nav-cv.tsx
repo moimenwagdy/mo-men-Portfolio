@@ -33,7 +33,7 @@ const Nav_cv = () => {
           playAnim ? "xr" : ""
         } cursor-pointer flex justify-center items-center gap-x-2 mb-auto`}>
         <Nav_cvIcon />
-        <p className="text-xl dark:text-white" >C.V</p>
+        <p className="text-xl dark:text-white">C.V</p>
       </span>
       <motion.ul
         onViewportLeave={scrollEndsAnim}
@@ -44,12 +44,12 @@ const Nav_cv = () => {
         initial="basic"
         animate={playAnim ? "play" : ""}
         className="gap-y-1 rounded-xl  w-32 flex flex-col justify-center items-center">
-        <li className="bg-slate-200 hover:bg-darkGray hover:text-white transition duration-300 px-2 rounded-sm">
+        <li className="dark:bg-darkestBlue hover:bg-darkGray bg-slate-200 hover:text-white transition duration-300 px-2 rounded-sm">
           <a href="/mo'men-resume.pdf" download>
             Download
           </a>
         </li>
-        <li className="bg-slate-200 hover:bg-darkGray hover:text-white transition duration-300 px-2 rounded-sm">
+        <li className="dark:bg-darkestBlue hover:bg-darkGray bg-slate-200 hover:text-white transition duration-300 px-2 rounded-sm">
           <a
             href="https://drive.google.com/file/d/1qvCEeJU69Husfve5MGuk4l9ldDE3_Msu/view?usp=drive_link"
             target="_blank">

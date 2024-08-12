@@ -25,7 +25,7 @@ const FormSubmitButton: React.FC<{
       </button>
       {(suspend || reviewed) && (
         <>
-          <p className="text-center text-xs">Thanks for your feedback</p>
+          <p className="text-center text-xs">Thank you, feedback Saved.</p>
         </>
       )}
     </>

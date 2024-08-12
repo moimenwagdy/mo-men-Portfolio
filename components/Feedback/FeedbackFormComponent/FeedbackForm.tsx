@@ -31,13 +31,14 @@ const FeedbackForm = () => {
           type="text"
           placeholder="name"
           name="userName"
-          className="w-1/2 px-2 py-1 rounded-md "
+          className="dark:bg-darkestBlue/50 w-1/2 px-2 py-1 rounded-md "
         />
         <textarea
-          className="resize-none px-2 py-1 w-full rounded-md "
+          className="dark:bg-darkestBlue/50 placeholder:pt-2 placeholder:text-xs resize-none px-2 py-1 w-full rounded-md "
           rows={5}
           cols={60}
-          placeholder="Enter your feedback here"
+          placeholder="Enter your feedback here --
+          your feedback will be invaluable in helping me improving, Please note that it will be saved directly on this website's database."
           name="userFeedback"
         />
         <FormSubmitButton suspend={isAdded} />

@@ -6,6 +6,7 @@ import { useState } from "react";
 const SkillsSection = () => {
   const [inViewForTheFirstTime, setInViewForTheFirstTime] =
     useState<boolean>(true);
+  const [play, setPlay] = useState<boolean>(true);
 
   const updateAnimationState = () => {
     const animationTime = setTimeout(() => {
@@ -32,7 +33,7 @@ const SkillsSection = () => {
     <motion.div
       variants={{ basic: { y: 1 }, move: { y: 0 } }}
       initial="basic"
-      animate="move"
+      animate={play && "move"}
       className="space-y-4">
       <h2 className="text-white  text-lg">Technical SKills</h2>
       <motion.ul
@@ -46,9 +47,12 @@ const SkillsSection = () => {
           return (
             <motion.li
               variants={{ move: { opacity: 1 } }}
-              initial={{ opacity: !inViewForTheFirstTime ? 1 : 0 }}
+              initial={{ opacity: !play ? 1 : 0 }}
               className="px-2 py-2 w-auto text-center text-darkBlack rounded-md bg-white/70 hover:bg-darkGray hover:text-white  transition-all duration-200 dark:bg-darkBlue dark:text-white dark:hover:bg-darkestBlue"
-              key={index}>
+              key={index}
+              onAnimationComplete={() => {
+                setPlay(false);
+              }}>
               <p>{skill} </p>
             </motion.li>
           );

@@ -1,7 +1,8 @@
 "use server";
 import { revalidatePath } from "next/cache";
+import Filter from "bad-words";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
- 
+const filter = new Filter();
 console.log(apiUrl);
 export const sendFeedBack = async (_prvState: any, formData: any) => {
   const data = {
@@ -20,7 +21,12 @@ export const sendFeedBack = async (_prvState: any, formData: any) => {
       message: "Name and feedback message cannot be empty.",
     };
   }
-
+  if (filter.isProfane(data.message) || filter.isProfane(data.name)) {
+    return {
+      success: false,
+      message: "Inappropriate content detected",
+    };
+  }
   try {
     const response = await fetch(`${apiUrl}/feedback/`, {
       method: "POST",

@@ -4,6 +4,7 @@ const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 export default async function DisplayFeedbackItems() {
   try {
     const response = await fetch(`${apiUrl}/feedback/`, {
+      next: { revalidate: 60 },
     });
 
     if (!response.ok) {

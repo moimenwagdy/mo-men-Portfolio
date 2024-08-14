@@ -28,6 +28,8 @@ const SkillsSection = () => {
     "CSS/CSS3",
     "Sass",
     "Git & Github",
+    "MongoDB",
+    "Unit testing",
   ];
   return (
     <motion.div

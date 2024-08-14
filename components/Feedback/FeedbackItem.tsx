@@ -18,7 +18,7 @@ const FeedbackItem: React.FC<{
       animate="play"
       className="bg-white/50 dark:bg-white/70 my-2 w-full min-h-fit px-2 py-2 rounded-md  ">
       <p className="text-black font-bold text-sm">{name}</p>
-      <p className="break-words text-darkBlack text-sm">{message}</p>
+      <p className="break-words text-darkBlack text-sm">{`"${message}"`}</p>
       <p className="text-xs text-black/70 text-end">{updateDate}</p>
     </motion.li>
   );

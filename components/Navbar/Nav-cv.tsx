@@ -51,8 +51,10 @@ const Nav_cv = () => {
         </li>
         <li className="dark:bg-darkestBlue hover:bg-darkGray bg-slate-200 hover:text-white transition duration-300 px-2 rounded-sm">
           <a
-            href="https://drive.google.com/file/d/1qvCEeJU69Husfve5MGuk4l9ldDE3_Msu/view?usp=drive_link"
-            target="_blank">
+            href="/mo'men-resume.pdf"
+            // href="https://drive.google.com/file/d/1qvCEeJU69Husfve5MGuk4l9ldDE3_Msu/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer">
             Preview
           </a>
         </li>

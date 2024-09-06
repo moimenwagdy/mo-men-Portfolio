@@ -9,7 +9,7 @@ const LandingContent = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="font-[900] text-4xl text-center">
-        Hello and welcome! i&#39;m mo&#39;men
+        Hello and welcome! I&#39;m Moimen
       </motion.h1>
       <motion.h3
         initial={{ opacity: 0 }}

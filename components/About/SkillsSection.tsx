@@ -2,12 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-
 const SkillsSection = () => {
   const [inViewForTheFirstTime, setInViewForTheFirstTime] =
     useState<boolean>(true);
   const [play, setPlay] = useState<boolean>(true);
-
   const updateAnimationState = () => {
     const animationTime = setTimeout(() => {
       setInViewForTheFirstTime(false);

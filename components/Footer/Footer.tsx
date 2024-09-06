@@ -5,13 +5,13 @@ const Footer = () => {
         <p className="text-sm">
           Developed & designed by{" "}
           <a href="" className="underline">
-            mo&#39;men wagdy
+            Moimen wagdy
           </a>
         </p>
       </div>
       <div className="text-center text-sm">
         <p>
-          &copy; {new Date().getFullYear()} mo&#39;men portfolio. All rights reserved.
+          &copy; {new Date().getFullYear()} Moimen portfolio. All rights reserved.
         </p>
       </div>
     </div>

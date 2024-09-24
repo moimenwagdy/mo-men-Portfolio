@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { ThemeProvider } from "next-themes";
 import Footer from "@/components/Footer/Footer";
-
+import hoho from "@/public/hoho.jpg";
 export const metadata: Metadata = {
   title: "mo'men portfolio",
   description: "portfolio for mo'men as a web developer",
@@ -49,7 +49,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth dark">
-      <body className="bg-gradient-to-b from-lightBlue via-lightestBlue to-lightBlue dark:from-darkBlue dark:via-darkestBlue dark:to-darkBlue font-lexend ">
+      {/* <body className="bg-gradient-to-b from-lightBlue via-lightestBlue to-lightBlue dark:from-darkBlue dark:via-darkestBlue dark:to-darkBlue font-lexend"> */}
+      <body
+        className={` font-lexend bg-lightBackground dark:bg-darkBackground bg-cover`}>
         <ThemeProvider attribute="class">
           <Navbar />
           {children}

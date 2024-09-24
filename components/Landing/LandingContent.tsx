@@ -8,7 +8,7 @@ const LandingContent = () => {
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="font-[900] text-4xl text-center">
+        className="font-[900] text-4xl text-center text-black">
         Hello and welcome! I&#39;m Moimen
       </motion.h1>
       <motion.h3
@@ -21,7 +21,7 @@ const LandingContent = () => {
         high-quality code, innovative design, and seamless user experiences.
       </motion.h3>
       <ReactTyped
-        className="text-sm  text-white text-center mx-auto"
+        className="text-sm text-center mx-auto font-bold text-black/70 mt-0 md:mt-2"
         strings={[
           `Whether you&#39;re here to explore my projects, learn more about my
         skills, or get in touch, I&#39;m thrilled to have you.`,

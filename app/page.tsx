@@ -6,7 +6,7 @@ import Feedback from "@/components/Feedback/FeedbackComponent";
 
 export default function Home() {
   return (
-    <main className="container mx-auto space-y-32 py-24">
+    <main className="container mx-auto space-y-32 py-24"> 
       <Landing />
       <About />
       <Projects />

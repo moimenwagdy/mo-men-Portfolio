@@ -8,28 +8,28 @@ const ProjectItemBody: React.FC<{
   description: string;
   gitUrl: string;
   liveUrl: string;
-}> = ({ usageGuide, technologies  }) => {
+}> = ({ usageGuide, technologies }) => {
   return (
-    <div className="w-full sm:w-2/3 flex flex-col space-y-1 py-6 h-full">
+    <div className="w-full sm:w-2/3 flex flex-col space-y-1 py-6 h-full z-10">
       <section className="self-start w-full space-y-2">
-        <h2 className=" mx-auto sm:mx-0 px-4 py-1 rounded-md  bg-gradient-to-r from-darkGray/50 to-transparent dark:from-white/50 dark:to-transparent w-fit">
+        <h2 className=" mx-auto sm:mx-0 px-4 py-1 rounded-md  bg-gradient-to-r from-darkGray/50 to-transparent dark:from-white/50 dark:to-transparent w-fit text-white">
           Used technologies
         </h2>
         <ul className=" text-sm  pe-2 flex flex-wrap justify-center sm:justify-start gap-x-2">
           {technologies.map((tech, index) => {
             return (
               <li key={index}>
-                <p>{tech}</p>
+                <p className="text-white">{tech}</p>
               </li>
             );
           })}
         </ul>
       </section>
       <section className="self-start w-full sm:w-[95%] space-y-2">
-        <h3 className=" w-fit mx-auto sm:mx-0 px-4 py-1 rounded-md  bg-gradient-to-r from-darkGray/50 to-transparent dark:from-white/50  dark:to-transparent ">
+        <h3 className=" w-fit mx-auto sm:mx-0 px-4 py-1 rounded-md  bg-gradient-to-r from-darkGray/50 to-transparent dark:from-white/50  dark:to-transparent text-white">
           Usage guide
         </h3>
-        <p className=" text-sm  text-center sm:text-start pe-2">
+        <p className=" text-sm  text-center sm:text-start pe-2 text-white">
           {usageGuide && usageGuide}
         </p>
       </section>

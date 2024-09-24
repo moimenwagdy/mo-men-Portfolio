@@ -1,20 +1,26 @@
+"use client";
 import React from "react";
 import Nav_cv from "./Nav-cv";
 import StyleMood from "./light-dark-Mood/StyleMood";
+import NavStyle from "./NavStyle";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="h-24 px-4 bg-lightestBlue dark:bg-darkestBlue/50 mx-auto rounded-br-lg rounded-bl-lg">
+    <motion.nav
+      variants={{ basic: { y: 0 }, move: { y: 0 } }}
+      initial="basic"
+      animate={"move"}
+      className="relative h-20 px-4  mx-auto z-0">
+      <NavStyle />
       <section className="container mx-auto h-full flex items-center justify-between">
-        <h1 className="text-3xl text-darkestBlack dark:text-white font-bold">
-          Portfolio
-        </h1>
+        <h1 className="text-3xl text-white font-extrabold">Portfolio</h1>
         <Nav_cv />
       </section>
-      <section className="container mx-auto mt-6">
+      <section className="container mx-auto mt-6 z-10">
         <StyleMood />
       </section>
-    </nav>
+    </motion.nav>
   );
 };
 

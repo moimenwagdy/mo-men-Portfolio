@@ -2,7 +2,7 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav_cvIcon = () => {
-  return <FontAwesomeIcon className="text-2xl dark:text-white" icon={faFile} />;
+  return <FontAwesomeIcon className="text-2xl text-white" icon={faFile} />;
 };
 
 export default Nav_cvIcon;

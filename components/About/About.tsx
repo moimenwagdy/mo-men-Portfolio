@@ -1,14 +1,17 @@
 import SectionHeader from "../SectionHeader/sectionHeader";
 import SkillsSection from "./SkillsSection";
+import AboutStyle from "./AboutStyle";
+import AboutContainer from "./AboutContainer";
 
 const Skills = () => {
   return (
     <section id="about" className="flex flex-col gap-y-14 w-full pt-10">
       <SectionHeader adress="About" />
-      <aside className="mx-auto bg-darkBlack/40 dark:bg-darkestBlack rounded-md py-4 w-full  sm:w-3/4 px-4 h-full space-y-10">
+      <AboutContainer>
+        <AboutStyle />
         <div className="space-y-4">
           <h2 className="text-white text-lg">
-            I&#39;m Frontend React, Next developer
+            I&#39;m Frontend developer
           </h2>
           <p className="text-white/70 dark:text-white/50  ">
             I have experience in web development, working on projects from small
@@ -19,7 +22,7 @@ const Skills = () => {
           </p>
         </div>
         <SkillsSection />
-      </aside>
+      </AboutContainer>
     </section>
   );
 };

@@ -31,7 +31,9 @@ const Project: React.FC<{
         title={title}
         description={description}
       />
-      <section className="w-full flex bg-white/10 dark:bg-darkestBlack/30 dark:text-white/80 rounded-md flex-col sm:flex-row sm:justify-evenly px-4 gap-y-4 items-center ">
+      {/* <section className="w-full flex bg-white/10 dark:bg-darkestBlack/30 dark:text-white/80 rounded-md flex-col sm:flex-row sm:justify-evenly px-4 gap-y-4 items-center "> */}
+      <section className="relative w-full flex rounded-md flex-col sm:flex-row sm:justify-evenly px-4 gap-y-4 items-center ">
+        <div className="absolute inset-0 bg-tri3Background z-0 bg-cover opacity-50"></div>
         <ProjectItemBody
           title={title}
           description={description}
@@ -40,7 +42,7 @@ const Project: React.FC<{
           liveUrl={liveUrl}
           gitUrl={gitUrl}
         />
-        <div className="flex flex-col justify-center items-center gap-y-1 py-2">
+        <div className="flex flex-col justify-center items-center gap-y-1 py-2 z-10" >
           <Image
             className="rounded-md"
             src={imgSrc}

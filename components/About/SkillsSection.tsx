@@ -48,7 +48,7 @@ const SkillsSection = () => {
             <motion.li
               variants={{ move: { opacity: 1 } }}
               initial={{ opacity: !play ? 1 : 0 }}
-              className="px-2 py-2 w-auto text-center text-darkBlack rounded-md bg-white/70 hover:bg-darkGray hover:text-white  transition-all duration-200 dark:bg-darkBlue dark:text-white dark:hover:bg-darkestBlue"
+              className="px-2 py-2 w-auto text-center text-white rounded-md bg-Blue hover:bg-darkGray hover:text-white  transition-all duration-200 dark:bg-darkBlue dark:text-white dark:hover:bg-darkestBlue"
               key={index}
               onAnimationComplete={() => {
                 setPlay(false);

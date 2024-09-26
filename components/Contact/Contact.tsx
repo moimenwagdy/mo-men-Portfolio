@@ -29,7 +29,7 @@ const Contact = () => {
               icon={faLinkedin}
             />
             <div className="dark:text-lightGray group-hover:text-white">
-              <p> Linked In</p>
+              <p> Linkedin</p>
             </div>
           </a>
           <a

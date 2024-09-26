@@ -1,16 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 const SkillsSection = () => {
   const [inViewForTheFirstTime, setInViewForTheFirstTime] =
     useState<boolean>(true);
   const [play, setPlay] = useState<boolean>(true);
+  const animationRef = useRef<HTMLDivElement>(null);
+  const timerRef = useRef<number | null>(null);
   const updateAnimationState = () => {
-    const animationTime = setTimeout(() => {
+    timerRef.current = window.setTimeout(() => {
       setInViewForTheFirstTime(false);
     }, 1500);
   };
+
   const skills = [
     "Type Script",
     "Next.JS",
@@ -29,8 +32,10 @@ const SkillsSection = () => {
     "MongoDB",
     "Unit testing",
   ];
+
   return (
     <motion.div
+      ref={animationRef}
       variants={{ basic: { y: 1 }, move: { y: 0 } }}
       initial="basic"
       animate={play && "move"}
@@ -52,6 +57,7 @@ const SkillsSection = () => {
               key={index}
               onAnimationComplete={() => {
                 setPlay(false);
+                clearTimeout(timerRef.current!);
               }}>
               <p>{skill} </p>
             </motion.li>

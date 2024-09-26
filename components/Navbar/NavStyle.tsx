@@ -1,9 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const NavStyle = () => {
   const theme = useTheme().theme;
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <motion.ul
@@ -25,7 +33,7 @@ const NavStyle = () => {
               variants={{ move: { opacity: 1 } }}
               initial={{ opacity: 0 }}
               key={i}
-              className={`text-center dark:opacity-50`}
+              className={`dark:opacity-50`}
               style={{ backgroundColor }}></motion.li>
           );
         })}

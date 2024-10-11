@@ -5,10 +5,12 @@ import { ThemeProvider } from "next-themes";
 import Footer from "@/components/Footer/Footer";
 import hoho from "@/public/hoho.jpg";
 export const metadata: Metadata = {
-  title: "mo'men portfolio",
+  title: "Moimen portfolio",
   description: "portfolio for mo'men as a web developer",
   keywords: [
     "mo'men wagdy",
+    "moimen wagdy",
+    "moamen wagdy",
     "next developer",
     "react developer",
     "frontend developer",
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     "moamen portfolio",
     "mo'men portfolio",
     "responsive designer",
-    "mo'men",
+    "moimen",
     "hiring frontend",
     "needed frontend",
     "experienced frontend",

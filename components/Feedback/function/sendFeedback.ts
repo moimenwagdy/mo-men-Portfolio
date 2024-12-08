@@ -3,7 +3,6 @@ import { revalidatePath } from "next/cache";
 import Filter from "bad-words";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 const filter = new Filter();
-console.log(apiUrl);
 export const sendFeedBack = async (_prvState: any, formData: any) => {
   const data = {
     name: formData.get("userName"),

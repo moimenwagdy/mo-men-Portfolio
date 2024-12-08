@@ -17,7 +17,6 @@ export async function POST(request: NextRequest) {
     "mongodb+srv://moimenwy:JmzK4zJ20IEfiBJH@cluster0.r2rqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   );
   const body = await request.json();
-
   const db = client.db();
   const feedbackCollection = db.collection("feedback");
   const result = await feedbackCollection.insertOne(body);

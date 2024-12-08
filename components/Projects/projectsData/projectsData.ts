@@ -1,5 +1,6 @@
 import violetLanding from "@/public/violetLanding.png";
 import mySpotify from "@/public/mySpotify.png";
+import inCircle from "@/public/inCircle.png";
 import { StaticImageData } from "next/image";
 
 interface project {
@@ -16,6 +17,33 @@ interface project {
 
 const projects: project[] = [
   {
+    id: "inCircle",
+    title: "inCircle",
+    description: "Social platform",
+    imgSrc: inCircle,
+    imgTitle: "inCircle",
+    technologies: [
+      "Next.JS -",
+      "TypeScript -",
+      "mongodb -",
+      "reduxjs/toolkit -",
+      "next-auth -",
+      "next-intl -",
+      "next-themes -",
+      "nodemailer -",
+      "react-dropzon -",
+      "Tailwind CSS -",
+      "framer-motion",
+    ],
+    usageGuide: `Start by signing up or logging in with your credentials or Google authentication for a 
+    quick and secure experience. Customize your profile, switch seamlessly between multiple languages, 
+    and enjoy real-time messaging with your connections. Share posts, interact with content through likes and
+     comments, and manage your privacy settings to control your audience. Designed with a responsive interface,
+     inCircle ensures smooth usability across all devices.`,
+    gitUrl: "https://github.com/moimenwagdy/inCircle",
+    liveUrl: "https://in-circle-iota.vercel.app/",
+  },
+  {
     id: "violetStore",
     title: "Violet Store",
     description: "E-commerce website",
@@ -25,7 +53,7 @@ const projects: project[] = [
       "Products API -",
       "TypeScript -",
       "React.js -",
-      "ReduxToolkit -",
+      "reduxjs/toolkit -",
       "React-Query -",
       "React-Router -",
       "TailwindCSS -",
@@ -50,7 +78,7 @@ const projects: project[] = [
       "Official spotify API -",
       "TypeScript -",
       "React.js -",
-      "ReduxToolkit -",
+      "reduxjs/toolkit -",
       "React-Query -",
       "React-Router -",
       "TailwindCSS -",
